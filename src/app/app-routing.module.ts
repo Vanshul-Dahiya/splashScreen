@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { SplashComponent } from './splash/splash.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { DetailComponentComponent } from './detail-component/detail-component.component';
 
 const routes: Routes = [
   {
@@ -16,7 +17,11 @@ const routes: Routes = [
   {
     component: SplashComponent,
     path: ''
-  }
+  },
+  // {
+  //   component: DetailComponentComponent,
+  //   path: '/detail'
+  // }
 ];
 
 @NgModule({

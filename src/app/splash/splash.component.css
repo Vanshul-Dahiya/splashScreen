@@ -1,0 +1,17 @@
+.splash-container {
+  text-align: center;
+  margin-left: 40px;
+  margin-top: 200px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.splash-container img {
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .splash-container {
+    margin: 350px auto;
+    padding: 10px;
+  }
+}

@@ -1,1 +1,25 @@
-<p>dashboard works!</p>
+<div class="grid-container">
+  <h1 class="mat-h1">Inspection</h1>
+  <mat-grid-list cols="2" rowHeight="350px">
+    <mat-grid-tile
+      *ngFor="let card of cards | async"
+      [colspan]="card.cols"
+      [rowspan]="card.rows"
+    >
+      <mat-card
+        [ngClass]="card.color"
+        class="dashboard-card"
+        id="card{{ card.id }}"
+      >
+        <mat-card-header>
+          <mat-card-title>
+            {{ card.title }}
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <div>{{ card.name }}</div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

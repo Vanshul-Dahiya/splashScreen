@@ -10,17 +10,27 @@ import { SplashComponent } from './splash/splash.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatGridListModule} from '@angular/material/grid-list'
+import {MatCardModule} from '@angular/material/card';
+import { DetailComponentComponent } from './detail-component/detail-component.component'
+
+
 @NgModule({
   declarations: [
     AppComponent,
     SplashComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    DetailComponentComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
