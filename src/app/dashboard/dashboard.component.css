@@ -36,3 +36,15 @@
 .dashboard-card-content {
   text-align: center;
 }
+@media (max-width: 600px) {
+  .grid-container {
+    margin: 10px;
+  }
+
+  .dashboard-card {
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+  }
+}
