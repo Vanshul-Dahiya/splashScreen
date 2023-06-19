@@ -1,5 +1,56 @@
-<div *ngFor="let container of divContainers" (click)="navigateToDashboard()" >
-    <div>{{ container.name }}</div>
-    <div>{{ container.id }}</div>
+<!-- <div *ngFor="let config of gridConfig" (click)="navigateToDashboard()">
+  <div>{{ config.name }}</div>
+  <div>{{ config.id }}</div>
+  <div>{{ config.description }}</div>
+</div> -->
+
+<h1>List of Colleges for Inspection</h1>
+
+<div class="grid-container">
+  <div
+    class="grid-item"
+    *ngFor="let item of gridConfig"
+    (click)="navigateToDashboard()"
+  >
+    <h2>{{ item.collegeName }}</h2>
+    <h4>Co-inspector Name : {{ item.coInspectorName }}</h4>
+    <p>Co-inspector Email : {{ item.coInspectorEmail }}</p>
+    <p>Institution Type : {{ item.instituteType }}</p>
   </div>
-  
+</div>
+
+<!-- 
+<div class="grid-container">
+  <h1 class="mat-h1"></h1>
+  <mat-grid-list cols="2" rowHeight="350px">
+    <mat-grid-tile
+      *ngFor="let config of gridConfig | async"
+      (click)="navigateToDashboard()"
+    >
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button
+              mat-icon-button
+              class="more-button"
+              [matMenuTriggerFor]="menu"
+              aria-label="Toggle menu"
+            >
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item>SF</button>
+              <button mat-menu-item>Inspection</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <div>college Name: {{ config || 'N/A' }}</div>
+          <div>co-inspector Name:</div>
+          <div>co-inspector Email:</div>
+          <div>institute type:</div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div> -->

@@ -16,7 +16,10 @@ import {MatCardModule} from '@angular/material/card';
 import { DetailComponentComponent } from './detail-component/detail-component.component';
 import { TableComponent } from './table/table.component'
 import { MatTableModule } from '@angular/material/table';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
+import { ListComponent } from './list/list.component';
 
 
 @NgModule({
@@ -26,7 +29,8 @@ import { HttpClientModule } from '@angular/common/http';
     LoginComponent,
     DashboardComponent,
     DetailComponentComponent,
-    TableComponent
+    TableComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +40,9 @@ import { HttpClientModule } from '@angular/common/http';
     MatCardModule,
     MatGridListModule,
     MatTableModule,
-    HttpClientModule
+    MatMenuModule,
+    HttpClientModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -5,6 +5,7 @@ import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DetailComponentComponent } from './detail-component/detail-component.component';
 import { TableComponent } from './table/table.component';
+import { ListComponent } from './list/list.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     component: DetailComponentComponent,
     path: 'detail'
+  },
+  {
+    component: ListComponent,
+    path: 'list'
   },
   { path: 'table/:id', component: TableComponent },
   // {

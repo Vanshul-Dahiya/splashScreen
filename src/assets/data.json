@@ -1,17 +1,19 @@
 [
     {
-      "id": 1,
-      "name": "Object 1",
-      "description": "Description for Object 1"
+      "instituteType": "existing" ,
+      "collegeName": "KM Clg ",
+      "coInspectorName": "Dr. Abdul kalam",
+      "coInspectorEmail": "abdulK@gmail.com"
     },
     {
-      "id": 2,
-      "name": "Object 2",
-      "description": "Description for Object 2"
-    },
-    {
-      "id": 3,
-      "name": "Object 3",
-      "description": "Description for Object 3"
+      "instituteType": "existing" ,
+      "collegeName": "Serikaralingam Clg ",
+      "coInspectorName": "Dr. Cherukuri ",
+      "coInspectorEmail": "chrk@gmail.com"
+    }, {
+      "instituteType": "existing" ,
+      "collegeName": "SGT Clg",
+      "coInspectorName": "Dr. Cherukuri ",
+      "coInspectorEmail": "chrk@gmail.com"
     }
   ]
