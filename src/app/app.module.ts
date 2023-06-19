@@ -16,6 +16,7 @@ import {MatCardModule} from '@angular/material/card';
 import { DetailComponentComponent } from './detail-component/detail-component.component';
 import { TableComponent } from './table/table.component'
 import { MatTableModule } from '@angular/material/table';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { MatTableModule } from '@angular/material/table';
     BrowserAnimationsModule,
     MatCardModule,
     MatGridListModule,
-    MatTableModule
+    MatTableModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

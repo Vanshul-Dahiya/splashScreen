@@ -19,6 +19,10 @@ const routes: Routes = [
     component: SplashComponent,
     path: ''
   },
+  {
+    component: DetailComponentComponent,
+    path: 'detail'
+  },
   { path: 'table/:id', component: TableComponent },
   // {
   //   component: DetailComponentComponent,

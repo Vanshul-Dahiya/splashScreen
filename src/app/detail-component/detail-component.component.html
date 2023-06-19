@@ -1,1 +1,5 @@
-<p>detail-component works!</p>
+<div *ngFor="let container of divContainers" (click)="navigateToDashboard()" >
+    <div>{{ container.name }}</div>
+    <div>{{ container.id }}</div>
+  </div>
+  
