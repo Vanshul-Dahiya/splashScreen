@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import {  inject } from '@angular/core'
 import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
 import { map } from 'rxjs/operators';
+import { Router } from '@angular/router';
 
 // import {Router} from '@angular/router'
 
@@ -19,6 +20,12 @@ export class DashboardComponent {
   // navigateToDetailPage(cardId : number ) : void {
   //   this.router.navigate(['/detail',cardId])
   // }
+  
+constructor(private router: Router) {}
+
+openTable(cardId: number) {
+  this.router.navigate(['/table', cardId]);
+}
 
   private breakpointObserver = inject(BreakpointObserver);
 

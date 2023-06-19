@@ -1,0 +1,54 @@
+<link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet"
+/>
+<div class="container">
+  <div class="table-responsive">
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+      <!-- course -->
+      <ng-container matColumnDef="course">
+        <th mat-header-cell *matHeaderCellDef>Course</th>
+        <td mat-cell *matCellDef="let element">{{ element.course }}</td>
+      </ng-container>
+
+      <!-- yes/no -->
+      <ng-container matColumnDef="yesNo">
+        <th mat-header-cell *matHeaderCellDef>Yes/No</th>
+        <td mat-cell *matCellDef="let element">
+          <input type="checkbox" [(ngModel)]="element.checked" />
+        </td>
+      </ng-container>
+
+      <!-- if yes enclose letter -->
+
+      <ng-container matColumnDef="ifYes">
+        <th mat-header-cell *matHeaderCellDef>if yes enclose letter</th>
+        <td mat-cell *matCellDef="let element">
+          <button class="btn-button" (click)="openCamera()">
+            <div class="button-camera">
+              <i class="material-icons">cameraalt</i>
+              <span> Camera </span>
+            </div>
+          </button>
+        </td>
+      </ng-container>
+
+      <!-- inspector remark -->
+      <ng-container matColumnDef="inspectorRemark">
+        <th mat-header-cell *matHeaderCellDef>Inspector Remark</th>
+        <td mat-cell *matCellDef="let element">
+          <select [(ngModel)]="element.selectedOption">
+            <option value="option0" selected disabled>select</option>
+            <option value="option1">Verified</option>
+            <option value="option2">Not Available</option>
+            <option value="option3">Available but not able to Verify</option>
+            <option value="option4">Doubtful</option>
+          </select>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+  </div>
+</div>

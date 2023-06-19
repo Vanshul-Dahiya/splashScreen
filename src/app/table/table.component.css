@@ -1,0 +1,70 @@
+.btn-button {
+  border-color: aliceblue;
+  border-radius: 10px;
+}
+.button-camera {
+  display: flex;
+}
+.button-camera i {
+  width: 30%;
+}
+.button-camera span {
+  margin-left: 0;
+  padding: 0;
+  text-align: center;
+  justify-content: center;
+}
+.table-responsive {
+  overflow-x: auto;
+  background-color: aliceblue;
+  border: 1px solid bisque;
+}
+
+@media screen and (max-width: 768px) {
+  .table-responsive {
+    width: 100%;
+  }
+
+  .table-responsive table {
+    width: 100%;
+  }
+
+  .table-responsive th,
+  .table-responsive td {
+    white-space: nowrap;
+  }
+}
+
+.container {
+  width: 100%;
+  overflow-x: auto; /* Enable horizontal scrolling on smaller screens */
+}
+
+@media (max-width: 600px) {
+  /* Styles for screens up to 600px width */
+  .container {
+    overflow-x: auto; /* Enable horizontal scrolling on small screens */
+  }
+
+  /* Adjust table columns to stack vertically */
+  .mat-header-row,
+  .mat-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Adjust table cells to occupy full width */
+  td.mat-cell,
+  th.mat-header-cell {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  /* Adjust font size for smaller screens */
+  th.mat-header-cell,
+  td.mat-cell,
+  select {
+    font-size: 14px;
+  }
+}

@@ -8,6 +8,7 @@
     >
       <mat-card
         [ngClass]="card.color"
+        (click)="openTable(card.id)"
         class="dashboard-card"
         id="card{{ card.id }}"
       >

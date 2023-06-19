@@ -13,7 +13,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatGridListModule} from '@angular/material/grid-list'
 import {MatCardModule} from '@angular/material/card';
-import { DetailComponentComponent } from './detail-component/detail-component.component'
+import { DetailComponentComponent } from './detail-component/detail-component.component';
+import { TableComponent } from './table/table.component'
+import { MatTableModule } from '@angular/material/table';
 
 
 @NgModule({
@@ -22,7 +24,8 @@ import { DetailComponentComponent } from './detail-component/detail-component.co
     SplashComponent,
     LoginComponent,
     DashboardComponent,
-    DetailComponentComponent
+    DetailComponentComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,8 @@ import { DetailComponentComponent } from './detail-component/detail-component.co
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

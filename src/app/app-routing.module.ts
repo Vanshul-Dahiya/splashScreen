@@ -4,6 +4,7 @@ import { SplashComponent } from './splash/splash.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DetailComponentComponent } from './detail-component/detail-component.component';
+import { TableComponent } from './table/table.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,7 @@ const routes: Routes = [
     component: SplashComponent,
     path: ''
   },
+  { path: 'table/:id', component: TableComponent },
   // {
   //   component: DetailComponentComponent,
   //   path: '/detail'
