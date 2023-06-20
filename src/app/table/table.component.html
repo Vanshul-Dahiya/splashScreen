@@ -65,19 +65,27 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let row of dataSource">
-          <td data-label="Course">{{ row.course }}</td>
+        <tr *ngFor="let element of dataSource; let i = index">
+          <td data-label="Course">{{ element.course }}</td>
           <td data-label="Yes/No">
-            <input type="checkbox" />
+            <input
+              type="checkbox"
+              [checked]="element.checkbox"
+              (change)="updateCheckboxValue($event, i)"
+            />
           </td>
           <td data-label="Enclose">
-            <button class="btn" (click)="openCamera()">Camera</button>
+            <button class="btn" (click)="openCamera(i)">Camera</button>
           </td>
           <td data-label="Image">
-            <img *ngIf="row.image" [src]="row.image" alt="Captured Image" />
+            <img
+              *ngIf="element.image"
+              [src]="element.image.base64String"
+              alt="Captured Image"
+            />
           </td>
           <td data-label="Remarks">
-            <select>
+            <select [(ngModel)]="element.selectOption">
               <option value="option1">Verified</option>
               <option value="option2">Not Available</option>
               <option value="option3">Avail, not verified</option>
@@ -87,5 +95,7 @@
         </tr>
       </tbody>
     </table>
+    <button class="submit-btn" (click)="submitTableData()">Submit</button>
+    <button class="submit-btn" (click)="getTableData()">Get</button>
   </div>
 </body>

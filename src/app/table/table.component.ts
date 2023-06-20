@@ -7,13 +7,15 @@ import {CameraResultType , CameraSource }  from '@capacitor/camera';
 
 export interface PeriodicElement {
   course: string;
-  image: string | undefined;
+  checkbox: boolean;
+  selectOption: string;
+  image: any | undefined;
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  { course: 'B.Pharma',image: undefined},
-  { course: 'M.Phil',image: undefined},
-  { course: 'M.Pharma',image: undefined},
+  { course: 'B.Pharma', checkbox: false, selectOption: '',image: undefined},
+  { course: 'M.Phil', checkbox: false, selectOption: '',image: undefined},
+  { course: 'M.Pharma', checkbox: false, selectOption: '',image: undefined},
 ];
 
 @Component({
@@ -45,7 +47,7 @@ constructor(private route : ActivatedRoute){
 displayedColumns: string[] = ['course', 'yesNo', 'ifYes', 'inspectorRemark'];
 dataSource = ELEMENT_DATA;
 
-async openCamera() {
+async openCamera(index : number) {
   const { Camera } = Plugins ;
 
   const image = await Camera['getPhoto']({
@@ -55,9 +57,33 @@ async openCamera() {
     source: CameraSource.Camera,
   });
 
+  this.dataSource[index].image = image.base64String;
   // Process the captured image or save it to your desired location
   console.log('Captured image:', image);
 }
+
+updateCheckboxValue(event: Event, index: number) {
+  const target = event.target as HTMLInputElement;
+  this.dataSource[index].checkbox = target.checked;
+  // this.dataSource[index].checkbox = checked;
+}
+
+
+submitTableData(){
+  localStorage.setItem('tableData', JSON.stringify(this.dataSource));
+}
+getTableData(){
+  const storedData= 
+  localStorage.getItem('tableData');
+  if(storedData){
+   const retrievedData = JSON.parse(storedData)
+   this.dataSource=retrievedData;
+   console.log(storedData);
+   
+  }
+}
+
+
 
 }
 
