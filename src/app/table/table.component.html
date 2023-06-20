@@ -98,4 +98,20 @@
     <button class="submit-btn" (click)="submitTableData()">Submit</button>
     <button class="submit-btn" (click)="getTableData()">Get</button>
   </div>
+  <table class="separate-table">
+    <thead>
+      <tr>
+        <th>Course</th>
+        <th>Checkbox</th>
+        <th>Select Option</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let element of separateDataSource">
+        <td> {{ element.course }}</td>
+        <td> {{ element.checkbox }}</td>
+        <td> {{ element.selectOption }}</td>
+      </tr>
+    </tbody>
+  </table>
 </body>

@@ -12,6 +12,7 @@ export interface PeriodicElement {
   image: any | undefined;
 }
 
+
 const ELEMENT_DATA: PeriodicElement[] = [
   { course: 'B.Pharma', checkbox: false, selectOption: '',image: undefined},
   { course: 'M.Phil', checkbox: false, selectOption: '',image: undefined},
@@ -46,6 +47,7 @@ constructor(private route : ActivatedRoute){
 
 displayedColumns: string[] = ['course', 'yesNo', 'ifYes', 'inspectorRemark'];
 dataSource = ELEMENT_DATA;
+separateDataSource: PeriodicElement[] = [];
 
 async openCamera(index : number) {
   const { Camera } = Plugins ;
@@ -77,7 +79,7 @@ getTableData(){
   localStorage.getItem('tableData');
   if(storedData){
    const retrievedData = JSON.parse(storedData)
-   this.dataSource=retrievedData;
+   this.separateDataSource=retrievedData;
    console.log(storedData);
    
   }
