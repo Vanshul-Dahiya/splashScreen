@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import {MatTableModule} from '@angular/material/table';
 import { Plugins } from '@capacitor/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import {CameraResultType , CameraSource }  from '@capacitor/camera';
@@ -8,13 +7,13 @@ import {CameraResultType , CameraSource }  from '@capacitor/camera';
 
 export interface PeriodicElement {
   course: string;
+  image: string | undefined;
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  { course: 'B.Pharma'},
-  { course: 'M.Pharma'},
-  { course: 'M.Phil'},
-
+  { course: 'B.Pharma',image: undefined},
+  { course: 'M.Phil',image: undefined},
+  { course: 'M.Pharma',image: undefined},
 ];
 
 @Component({
@@ -47,7 +46,7 @@ displayedColumns: string[] = ['course', 'yesNo', 'ifYes', 'inspectorRemark'];
 dataSource = ELEMENT_DATA;
 
 async openCamera() {
-  const { Camera } = Plugins;
+  const { Camera } = Plugins ;
 
   const image = await Camera['getPhoto']({
     quality: 90,
