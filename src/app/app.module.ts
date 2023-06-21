@@ -20,6 +20,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
 import { ListComponent } from './list/list.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { ListComponent } from './list/list.component';
     DashboardComponent,
     DetailComponentComponent,
     TableComponent,
-    ListComponent
+    ListComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,

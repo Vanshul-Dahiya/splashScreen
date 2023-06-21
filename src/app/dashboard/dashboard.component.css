@@ -1,5 +1,7 @@
 .grid-container {
-  margin: 20px;
+  margin-top: 60px;
+  position: static;
+  top: 10px;
 }
 
 .dashboard-card {
@@ -36,9 +38,25 @@
 .dashboard-card-content {
   text-align: center;
 }
+@media (max-width: 1024px) {
+  .grid-container {
+    margin-top: 120px;
+    position: relative;
+    top: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .grid-container {
+    margin-top: 120px;
+    position: relative;
+    top: 30px;
+  }
+}
+
 @media (max-width: 600px) {
   .grid-container {
     margin: 10px;
+    top: 20px;
   }
 
   .dashboard-card {
@@ -47,4 +65,12 @@
     right: 10px;
     bottom: 10px;
   }
+}
+.sideNav {
+  margin-bottom: 100px;
+  position: absolute;
+  bottom: 100px;
+}
+.scrollable-container {
+  overflow-y: auto;
 }
