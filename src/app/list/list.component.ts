@@ -15,30 +15,37 @@ export class ListComponent {
 
   private breakpointObserver = inject(BreakpointObserver);
 
+  gridData: any[] = [
+    { name: 'Item 1', description: 'Description 1' },
+    { name: 'Item 2', description: 'Description 2' },
+    { name: 'Item 2', description: 'Description 2' },
+    { name: 'Item 4', description: 'Description 4' },
+  ]
+    // Add more grid items if needed
   navigate(){
     this.router.navigate(['/detail'])
   }
 
   /** Based on the screen size, switch from standard to one column per row */
-  cards = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
-    map(({ matches }) => {
-      if (matches) {
-        return [
-          { title: 'Card 1', cols: 1, rows: 1 },
-          { title: 'Card 2', cols: 1, rows: 1 },
-          { title: 'Card 3', cols: 1, rows: 1 },
-          { title: 'Card 4', cols: 1, rows: 1 }
-        ];
-      }
+  // cards = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
+  //   map(({ matches }) => {
+  //     if (matches) {
+  //       return [
+  //         { title: 'Card 1', cols: 1, rows: 1 },
+  //         { title: 'Card 2', cols: 1, rows: 1 },
+  //         { title: 'Card 3', cols: 1, rows: 1 },
+  //         { title: 'Card 4', cols: 1, rows: 1 }
+  //       ];
+  //     }
 
-      return [
-        { title: 'Card 1', cols: 2, rows: 1 },
-        { title: 'Card 2', cols: 1, rows: 1 },
-        { title: 'Card 3', cols: 1, rows: 2 },
-        { title: 'Card 4', cols: 1, rows: 1 }
-      ];
-    })
-  );
+  //     return [
+  //       { title: 'Card 1', cols: 2, rows: 1 },
+  //       { title: 'Card 2', cols: 1, rows: 1 },
+  //       { title: 'Card 3', cols: 1, rows: 2 },
+  //       { title: 'Card 4', cols: 1, rows: 1 }
+  //     ];
+  //   })
+  // );
 
 
 

@@ -1,6 +1,6 @@
-<div class="grid-container">
-  <h1 class="mat-h1"></h1>
-  <mat-grid-list cols="2" rowHeight="350px">
+<!-- <div class="grid-container">
+  <h1 class="mat-h1">Main</h1>
+  <mat-grid-list cols="2" rowHeight="450px">
     <mat-grid-tile
       *ngFor="let card of cards | async"
       [colspan]="card.cols"
@@ -9,25 +9,35 @@
       <mat-card class="dashboard-card">
         <mat-card-header>
           <mat-card-title>
-            <!-- {{card.title}} -->
-            <button
-              mat-icon-button
-              class="more-button"
-              [matMenuTriggerFor]="menu"
-              aria-label="Toggle menu"
-            >
-              <mat-icon>more_vert</mat-icon>
-            </button>
-            <mat-menu #menu="matMenu" xPosition="before">
-              <button mat-menu-item>Expand</button>
-              <button mat-menu-item>Remove</button>
-            </mat-menu>
+            {{card.title}}
           </mat-card-title>
         </mat-card-header>
         <mat-card-content class="dashboard-card-content" (click)="navigate()">
-          <div>,.</div>
+          <div>Inspection</div>
         </mat-card-content>
       </mat-card>
     </mat-grid-tile>
   </mat-grid-list>
+</div> -->
+
+<div fxLayout="row wrap" fxLayoutAlign="start start" class="grid-container">
+  <div class="grid-item">
+    <!-- Display item content here -->
+    <div class="c1">
+      <div (click)="navigate()">Inspection</div>
+      <img src="../../assets/page-search-icon-88x96-ta62injg 1.png" alt="icon" />
+    </div>
+    <div class="c2">
+      <div (click)="navigate()">Report</div>
+      <img src="../../assets/file-icon-85x96-1r29vd3j 1.png" alt="icon" />
+    </div>
+    <div class="c3">
+      <div (click)="navigate()">Pending</div>
+      <img src="../../assets/tasks-icon-96x82-lz1vh7wl 1.png" alt="icon" />
+    </div>
+    <div class="c4">
+      <div (click)="navigate()">TA/DA</div>
+      <img src="../../assets/wallet-icon-96x88-7rw010wj 1.png" alt="icon" />
+    </div>
+  </div>
 </div>
