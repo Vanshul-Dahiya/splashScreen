@@ -1,0 +1,30 @@
+[       
+     { "id": 1,
+     "title": "filled",
+     "name":"General Information",
+     "image" :"../assets/general_info.png"},
+     { "id": 2,
+     "title": "filled",
+     "name":"Statutory Documents",
+     "image" :"../assets/documents.png"},
+     { "id": 3,
+     "title": "filled",
+     "name":"Faculty Details",
+     "image" :"../assets/faculty.png"},
+
+     { "id": 4,
+     "title": "filled",
+     "name":"Infrastructure",
+     "image" :"../assets/infrastructure.png"},
+
+     { "id": 5,
+     "title": "filled",
+     "name":"Equipment",
+     "image" :"../assets/equipment.png"},
+  
+     { "id": 6,
+     "title": "filled",
+     "name":"Library",
+     "image" :"../assets/library.png"}
+
+]

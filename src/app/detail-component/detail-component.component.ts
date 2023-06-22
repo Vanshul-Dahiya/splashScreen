@@ -20,7 +20,7 @@ export class DetailComponentComponent {
   constructor(private http: HttpClient , private router : Router) {  }
 
   getColor(index : number): string {
-    const baseColor = '#CD4FB9'; // Replace with your desired base color
+    const baseColor = '#F4DC04'; // Replace with your desired base color
     const colorVariant = tinycolor(baseColor).lighten(index * 5).toString();
     console.log( " colorV ->  "  , colorVariant)
     return colorVariant;
@@ -43,7 +43,7 @@ export class DetailComponentComponent {
   }
 
 
-  private breakpointObserver = inject(BreakpointObserver);
+  // private breakpointObserver = inject(BreakpointObserver);
 
   /** Based on the screen size, switch from standard to one column per row */
   // getGridConfig(){
