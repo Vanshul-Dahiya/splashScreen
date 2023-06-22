@@ -5,6 +5,9 @@ import {  inject } from '@angular/core';
 import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
 import { map } from 'rxjs/operators';
 
+const tinycolor = require('tinycolor2');
+
+
 
 @Component({
   selector: 'app-detail-component',
@@ -16,6 +19,12 @@ export class DetailComponentComponent {
 
   constructor(private http: HttpClient , private router : Router) {  }
 
+  getColor(index : number): string {
+    const baseColor = '#CD4FB9'; // Replace with your desired base color
+    const colorVariant = tinycolor(baseColor).lighten(index * 5).toString();
+    console.log( " colorV ->  "  , colorVariant)
+    return colorVariant;
+  }
 
   ngOnInit() {
     this.http.get<any>('assets/data.json')
@@ -24,8 +33,7 @@ export class DetailComponentComponent {
         // console.log(data);
         
          // Assuming the JSON data is an array
-        console.log(this.gridConfig);
-        
+        // console.log(this.gridConfig);
       });
   }
 

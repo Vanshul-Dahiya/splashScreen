@@ -4,13 +4,14 @@
   <div>{{ config.description }}</div>
 </div> -->
 
-<h1>List of Colleges for Inspection</h1>
+<h1>List of Institutions for Inspection</h1>
 
 <div class="grid-container">
   <div
     class="grid-item"
-    *ngFor="let item of gridConfig"
+    *ngFor="let item of gridConfig; let i = index"
     (click)="navigateToDashboard()"
+    [style.backgroundColor]="getColor(i)"
   >
     <h2>{{ item.collegeName }}</h2>
     <h4>Co-inspector Name : {{ item.coInspectorName }}</h4>
