@@ -8,7 +8,6 @@ import { FormsModule } from '@angular/forms';
 
 import { SplashComponent } from './splash/splash.component';
 import { LoginComponent } from './login/login.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatGridListModule} from '@angular/material/grid-list'
@@ -21,6 +20,11 @@ import { MatIconModule } from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
 import { ListComponent } from './list/list.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { InspectionPageComponent } from './inspection-page/inspection-page.component';
+import { GeneralInfoComponent } from './general-info/general-info.component';
+import { ClaimFormComponent } from './claim-form/claim-form.component';
+import { ReportPageComponent } from './report-page/report-page.component';
+import { PendingListPageComponent } from './pending-list-page/pending-list-page.component';
 
 
 @NgModule({
@@ -28,11 +32,15 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     AppComponent,
     SplashComponent,
     LoginComponent,
-    DashboardComponent,
     DetailComponentComponent,
     TableComponent,
     ListComponent,
-    SidenavComponent
+    SidenavComponent,
+    InspectionPageComponent,
+    GeneralInfoComponent,
+    ClaimFormComponent,
+    ReportPageComponent,
+    PendingListPageComponent
   ],
   imports: [
     BrowserModule,

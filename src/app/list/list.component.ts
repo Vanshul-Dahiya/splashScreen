@@ -15,15 +15,32 @@ export class ListComponent {
 
   private breakpointObserver = inject(BreakpointObserver);
 
-  gridData: any[] = [
-    { name: 'Item 1', description: 'Description 1' },
-    { name: 'Item 2', description: 'Description 2' },
-    { name: 'Item 2', description: 'Description 2' },
-    { name: 'Item 4', description: 'Description 4' },
-  ]
-    // Add more grid items if needed
-  navigate(){
-    this.router.navigate(['/detail'])
+  // gridData: any[] = [
+  //   { name: 'Item 1', description: 'Description 1' },
+  //   { name: 'Item 2', description: 'Description 2' },
+  //   { name: 'Item 2', description: 'Description 2' },
+  //   { name: 'Item 4', description: 'Description 4' },
+  // ]
+  navigate(itemId: number){
+    // this.router.navigate(['/detail'])
+      switch (itemId) {
+        case 1:
+          this.router.navigate(['/detail']);
+          break;
+        case 2:
+          this.router.navigate(['/report']);
+          break;
+        case 3:
+          this.router.navigate(['/pending']);
+          break;
+        case 4:
+          this.router.navigate(['/claimForm']);
+          break;
+        default:
+          // Handle other item IDs
+          break;
+      }
+    
   }
 
   /** Based on the screen size, switch from standard to one column per row */

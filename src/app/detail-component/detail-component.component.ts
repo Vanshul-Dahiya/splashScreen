@@ -38,7 +38,7 @@ export class DetailComponentComponent {
   }
 
   navigateToDashboard(){
-    this.router.navigate(['/dashboard'])
+    this.router.navigate(['/inspectionDashboard'])
     
   }
 

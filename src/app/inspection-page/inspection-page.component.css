@@ -1,0 +1,22 @@
+.grid-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto auto 20px;
+}
+.icon-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto ;
+    margin-bottom: auto ;
+    margin-left: 70px;
+    width: 10px;
+    /* gap: 2px; */
+    padding: 12px;
+}
+.img{
+    margin: auto 70px;
+    /* padding: 12px; */
+}

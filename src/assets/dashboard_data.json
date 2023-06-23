@@ -25,6 +25,10 @@
      { "id": 6,
      "title": "filled",
      "name":"Library",
+     "image" :"../assets/library.png"},
+     { "id": 7,
+     "title": "filled",
+     "name":"Digital Sign",
      "image" :"../assets/library.png"}
 
 ]
