@@ -41,10 +41,20 @@ export class InspectionPageComponent {
         this.router.navigate(['/table',itemId]);
         break;
       case 3:
-        this.router.navigate(['/table2',itemId]);
+        this.router.navigate(['/table',itemId]);
+        break;
+      case 4:
+        this.router.navigate(['/table',itemId]);
+        break;
+      case 5:
+        this.router.navigate(['/table',itemId]);
+        break;
+      case 6:
+        this.router.navigate(['/table',itemId]);
         break;
       default:
         // Handle other item IDs
+        this.router.navigate(['/'])
         break;
     }
   }

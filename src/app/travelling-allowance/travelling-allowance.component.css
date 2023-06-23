@@ -12,13 +12,13 @@
     align-items: center;
   }
   .header {
-    margin: 20px auto;
+    margin: 10px auto;
     text-align: center;
     font-weight: 500;
     font-size: 17px;
   }
   .container {
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -10,6 +10,9 @@ import { GeneralInfoComponent } from './general-info/general-info.component';
 import { ClaimFormComponent } from './claim-form/claim-form.component';
 import { ReportPageComponent } from './report-page/report-page.component';
 import { PendingListPageComponent } from './pending-list-page/pending-list-page.component';
+import { TravellingAllowanceComponent } from './travelling-allowance/travelling-allowance.component';
+import { AttachmentComponent } from './attachment/attachment.component';
+import { ClaimCalculationComponent } from './claim-calculation/claim-calculation.component';
 
 const routes: Routes = [
   {
@@ -40,6 +43,9 @@ const routes: Routes = [
   { path: 'generalInfo', component: GeneralInfoComponent },
   { path: 'report', component: ReportPageComponent },
   { path: 'pending', component: PendingListPageComponent },
+  { path: 'travelingAllowance', component: TravellingAllowanceComponent },
+  { path: 'attachment', component: AttachmentComponent },
+  { path: 'calculation', component: ClaimCalculationComponent },
   // {
   //   component: DetailComponentComponent,
   //   path: '/detail'

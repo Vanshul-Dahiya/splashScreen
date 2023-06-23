@@ -25,6 +25,9 @@ import { GeneralInfoComponent } from './general-info/general-info.component';
 import { ClaimFormComponent } from './claim-form/claim-form.component';
 import { ReportPageComponent } from './report-page/report-page.component';
 import { PendingListPageComponent } from './pending-list-page/pending-list-page.component';
+import { TravellingAllowanceComponent } from './travelling-allowance/travelling-allowance.component';
+import { AttachmentComponent } from './attachment/attachment.component';
+import { ClaimCalculationComponent } from './claim-calculation/claim-calculation.component';
 
 
 @NgModule({
@@ -40,7 +43,10 @@ import { PendingListPageComponent } from './pending-list-page/pending-list-page.
     GeneralInfoComponent,
     ClaimFormComponent,
     ReportPageComponent,
-    PendingListPageComponent
+    PendingListPageComponent,
+    TravellingAllowanceComponent,
+    AttachmentComponent,
+    ClaimCalculationComponent,
   ],
   imports: [
     BrowserModule,
