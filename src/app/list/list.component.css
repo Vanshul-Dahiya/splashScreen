@@ -65,13 +65,13 @@
 
   color: #841c1c;
 }
-.grid-item .c1 img{
+.grid-item .c1 img {
   position: absolute;
   width: 42px;
   height: 54px;
   left: 195px;
   top: 39px;
-  
+
   border-radius: 7px;
 }
 .grid-item .c2 {
@@ -105,13 +105,13 @@
 
   color: #7e2e2e;
 }
-.grid-item .c2 img{
+.grid-item .c2 img {
   position: absolute;
   width: 42px;
   height: 54px;
   left: 195px;
   top: 39px;
-  
+
   border-radius: 7px;
 }
 .grid-item .c3 {
@@ -145,13 +145,13 @@
 
   color: #7e2e2e;
 }
-.grid-item .c3 img{
+.grid-item .c3 img {
   position: absolute;
   width: 42px;
   height: 54px;
   left: 195px;
   top: 39px;
-  
+
   border-radius: 7px;
 }
 .grid-item .c4 {
@@ -186,12 +186,17 @@
 
   color: #7e2e2e;
 }
-.grid-item .c4 img{
+.grid-item .c4 img {
   position: absolute;
   width: 42px;
   height: 54px;
   left: 195px;
   top: 39px;
-  
+
   border-radius: 7px;
+}
+.footer-nav {
+  padding: 0;
+  margin-top: 450px;
+  margin-bottom: 0px;
 }

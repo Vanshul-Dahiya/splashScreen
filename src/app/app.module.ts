@@ -28,6 +28,7 @@ import { PendingListPageComponent } from './pending-list-page/pending-list-page.
 import { TravellingAllowanceComponent } from './travelling-allowance/travelling-allowance.component';
 import { AttachmentComponent } from './attachment/attachment.component';
 import { ClaimCalculationComponent } from './claim-calculation/claim-calculation.component';
+import { BottomBarComponent } from './bottom-bar/bottom-bar.component';
 
 
 @NgModule({
@@ -47,6 +48,7 @@ import { ClaimCalculationComponent } from './claim-calculation/claim-calculation
     TravellingAllowanceComponent,
     AttachmentComponent,
     ClaimCalculationComponent,
+    BottomBarComponent,
   ],
   imports: [
     BrowserModule,

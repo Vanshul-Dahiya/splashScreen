@@ -15,5 +15,10 @@
       "collegeName": "SGT Clg",
       "coInspectorName": "Dr. Cherukuri ",
       "coInspectorEmail": "chrk@gmail.com"
+    },{
+      "instituteType": "imaginary" ,
+      "collegeName": "AIIMS",
+      "coInspectorName": "Dr. BOss ",
+      "coInspectorEmail": "boss@gmail.com"
     }
   ]
