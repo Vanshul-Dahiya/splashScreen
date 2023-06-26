@@ -56,3 +56,15 @@
 .bottom-bar nav {
   margin: 30px;
 }
+@media (max-width: 768px) {
+  .bottom-bar {
+    margin-top: -160px;
+  }
+  .footer-nav {
+    margin-left: 30px;
+    width: 80%;
+    padding: 0;
+    /* margin-top: 10px; */
+    margin-bottom: 0px;
+  }
+}

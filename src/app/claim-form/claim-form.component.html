@@ -1,42 +1,46 @@
-<div>
-  <div class="nav-bar">
-    <span> PCI - T.A/D.A Claim Form </span>
-  </div>
+<body>
+  <div>
+    <div class="nav-bar">
+      <!-- <span>  -->
+        PCI - T.A/D.A Claim Form 
+      <!-- </span> -->
+    </div>
 
-  <div class="header">
-    <span> Basic Information </span>
-  </div>
+    <div class="header">
+      <span> Basic Information </span>
+    </div>
 
-  <div class="container">
-    <span> Name : ABC</span> <br />
-    <span> Designation : XYZ</span> <br />
-    <span>
-      In service or retired :
-      <select name="service" id="">
-        <option value="option1">Service</option>
-        <option value="option2">Retired</option>
-      </select>
-    </span>
-    <br />
-    <span> Basic Pay : <input type="text" /> </span> <br />
-    <span> Declared income : <input type="text" /> </span><br />
-    <span>
-      Purpose of Journey :
-      <select name="meeting" id="">
-        <option value="option3">Meeting</option>
-        <option value="option4">Inspection</option>
-      </select>
-    </span>
-    <span> Dates of Event : <input type="date" /> </span>
-  </div>
+    <div class="container">
+      <span> Name : ABC</span> <br />
+      <span> Designation : XYZ</span> <br />
+      <span>
+        In service or retired :
+        <select name="service" id="">
+          <option value="option1">Service</option>
+          <option value="option2">Retired</option>
+        </select>
+      </span>
+      <br />
+      <span> Basic Pay : <input type="text" /> </span> <br />
+      <span> Declared income : <input type="text" /> </span><br />
+      <span>
+        Purpose of Journey :
+        <select name="meeting" id="">
+          <option value="option3">Meeting</option>
+          <option value="option4">Inspection</option>
+        </select>
+      </span>
+      <span> Dates of Event : <input type="date" /> </span>
+    </div>
 
-  <div class="footer">
-    <button (click)="navigate()" >Submit</button>
-  </div>
+    <div class="footer">
+      <button (click)="navigate()">submit</button>
+    </div>
 
-  <div class="bottom-bar">
-    <nav>Home</nav>
-    <nav>Dashboard</nav>
-    <nav>Profile</nav>
+    <!-- <div class="bottom-bar"> -->
+    <div class="footer-nav">
+      <app-bottom-bar></app-bottom-bar>
+    </div>
+    <!-- </div> -->
   </div>
-</div>
+</body>

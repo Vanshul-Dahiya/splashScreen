@@ -19,31 +19,32 @@
     </mat-grid-tile>
   </mat-grid-list>
 </div> -->
-
-<div fxLayout="row wrap" fxLayoutAlign="start start" class="grid-container">
-  <div class="grid-item">
-    <!-- Display item content here -->
-    <div class="c1" (click)="navigate(1)">
-      <div>Inspection</div>
-      <img
-        src="../../assets/page-search-icon-88x96-ta62injg 1.png"
-        alt="icon"
-      />
-    </div>
-    <div class="c2" (click)="navigate(2)">
-      <div>Report</div>
-      <img src="../../assets/file-icon-85x96-1r29vd3j 1.png" alt="icon" />
-    </div>
-    <div class="c3" (click)="navigate(3)">
-      <div>Pending</div>
-      <img src="../../assets/tasks-icon-96x82-lz1vh7wl 1.png" alt="icon" />
-    </div>
-    <div class="c4" (click)="navigate(4)">
-      <div>TA/DA</div>
-      <img src="../../assets/wallet-icon-96x88-7rw010wj 1.png" alt="icon" />
+<div class="main-container">
+  <div fxLayout="row wrap" fxLayoutAlign="start start" class="grid-container">
+    <div class="grid-item">
+      <!-- Display item content here -->
+      <div class="c1" (click)="navigate(1)">
+        <div>Inspection</div>
+        <img
+          src="../../assets/page-search-icon-88x96-ta62injg 1.png"
+          alt="icon"
+        />
+      </div>
+      <div class="c2" (click)="navigate(2)">
+        <div>Report</div>
+        <img src="../../assets/file-icon-85x96-1r29vd3j 1.png" alt="icon" />
+      </div>
+      <div class="c3" (click)="navigate(3)">
+        <div>Pending</div>
+        <img src="../../assets/tasks-icon-96x82-lz1vh7wl 1.png" alt="icon" />
+      </div>
+      <div class="c4" (click)="navigate(4)">
+        <div>TA/DA</div>
+        <img src="../../assets/wallet-icon-96x88-7rw010wj 1.png" alt="icon" />
+      </div>
     </div>
   </div>
-</div>
-<div class="footer-nav">
-  <app-bottom-bar></app-bottom-bar>
+  <div class="footer-nav">
+    <app-bottom-bar></app-bottom-bar>
+  </div>
 </div>

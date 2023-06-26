@@ -1,50 +1,56 @@
 <body>
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
   <div class="navigation">
     <ul>
       <li class="list active">
-        <a href="#">
+        <a [routerLink]="['/']">
           <span class="icon">
-            <!-- <ion-icon name="home-outline"></ion-icon> -->
+            <mat-icon
+              aria-hidden="false"
+              aria-label="Example home icon"
+              fontIcon="home"
+            ></mat-icon>
           </span>
           <span class="text">home</span>
         </a>
       </li>
 
       <li class="list">
-        <a href="#">
+        <a [routerLink]="['/detail']">
           <span class="icon">
-            <!-- <ion-icon name="person-outline"></ion-icon> -->
+            <mat-icon>account_circle</mat-icon>
           </span>
           <span class="text">Profile</span>
         </a>
       </li>
-
       <li class="list">
-        <a href="#">
+        <a [routerLink]="['/list']">
           <span class="icon">
-            <!-- <ion-icon name="chatbubble-outline"></ion-icon> -->
+            <mat-icon>sms</mat-icon>
           </span>
           <span class="text">message</span>
         </a>
       </li>
 
       <li class="list">
-        <a href="#">
+        <a href="/">
           <span class="icon">
-            <!-- <ion-icon name="settings-outline"></ion-icon> -->
+            <mat-icon>settings</mat-icon>
           </span>
           <span class="text">settings</span>
         </a>
       </li>
-      <div class="indicator"></div>
     </ul>
   </div>
-  <script>
+  <!-- <script>
     const list = document.querySelectorAll(".list");
     function activeLink() {
       list.forEach((item) => item.classList.remove("active"));
       this.classList.add("active");
     }
     list.forEach((item) => item.addEventListener("click", activeLink));
-  </script>
+  </script> -->
 </body>

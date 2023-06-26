@@ -29,7 +29,7 @@ import { TravellingAllowanceComponent } from './travelling-allowance/travelling-
 import { AttachmentComponent } from './attachment/attachment.component';
 import { ClaimCalculationComponent } from './claim-calculation/claim-calculation.component';
 import { BottomBarComponent } from './bottom-bar/bottom-bar.component';
-
+import { RouterModule, Routes } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -60,7 +60,8 @@ import { BottomBarComponent } from './bottom-bar/bottom-bar.component';
     MatTableModule,
     MatMenuModule,
     HttpClientModule,
-    MatIconModule
+    MatIconModule,
+    RouterModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
