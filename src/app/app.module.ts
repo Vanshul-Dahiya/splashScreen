@@ -30,6 +30,7 @@ import { AttachmentComponent } from './attachment/attachment.component';
 import { ClaimCalculationComponent } from './claim-calculation/claim-calculation.component';
 import { BottomBarComponent } from './bottom-bar/bottom-bar.component';
 import { RouterModule, Routes } from '@angular/router';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { RouterModule, Routes } from '@angular/router';
     AttachmentComponent,
     ClaimCalculationComponent,
     BottomBarComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,

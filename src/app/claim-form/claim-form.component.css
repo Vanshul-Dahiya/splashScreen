@@ -7,8 +7,7 @@
   margin: 30px;
 } */
 
-
-@media (min-width:451px) and (max-width: 850px) {
+@media (min-width: 451px) and (max-width: 850px) {
   .nav-bar {
     padding-top: 22px;
     text-align: center;
@@ -50,16 +49,16 @@
   .footer button {
     /* position: relative; */
     margin: 1px auto;
-    padding: 10px;
+  
     text-align: center;
     text-transform: uppercase;
     display: flex;
-    width: 35%;
-    font-size: larger;
+    width: 50%;
+    padding: 12px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 8px;
     background: #fec00f;
   }
   .footer-nav {
@@ -110,11 +109,12 @@
   .footer button {
     /* position: relative; */
     margin: 1px auto;
-
+  
     text-align: center;
     text-transform: uppercase;
     display: flex;
-    width: 75%;
+    width: 40%;
+    padding: 12px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -127,7 +127,56 @@
     width: 80%;
   }
 }
-
+@media screen and (max-height: 700px) {
+  .footer-nav {
+    position: absolute;
+    margin: 20px;
+    width: 80%;
+    padding: 8px;
+  }
+}
+@media screen and (min-height: 701px) and (max-height: 800px) {
+  .footer-nav {
+    position: absolute;
+    margin: 2px 43px;
+    width: 80%;
+  }
+}
+@media screen and (min-height: 801px) and (max-height: 900px) {
+  .footer-nav {
+    position: absolute;
+    margin: 10px 38px;
+    width: 80%;
+  }
+}
+@media screen and (min-height: 901px) and (max-height: 1001px) {
+  .footer-nav {
+    position: absolute;
+    margin: 10px 33px;
+    width: 80%;
+  }
+}
+@media screen and (min-height: 1002px) and (max-height: 1101px) {
+  .footer-nav {
+    position: absolute;
+    margin: 10px 67px;
+    width: 80%;
+  }
+}
+@media screen and (min-height: 1102px) and (max-height: 1220px) {
+  .footer-nav {
+    position: absolute;
+    margin: 10px 61px;
+    width: 80%;
+  }
+}
+@media screen and (min-height: 1221px) and (max-height: 1420px) {
+  .footer-nav {
+    position: absolute;
+    margin: 1090px 81px;
+    width: 80%;
+  }
+}
 @media (min-width: 200px) and (max-width: 299px) {
   .nav-bar {
     padding-top: 22px;
@@ -170,11 +219,12 @@
   .footer button {
     /* position: relative; */
     margin: 1px auto;
-
+  
     text-align: center;
     text-transform: uppercase;
     display: flex;
-    width: 75%;
+    width: 50%;
+    padding: 12px;
     flex-direction: column;
     justify-content: center;
     align-items: center;

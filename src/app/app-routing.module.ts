@@ -13,6 +13,7 @@ import { PendingListPageComponent } from './pending-list-page/pending-list-page.
 import { TravellingAllowanceComponent } from './travelling-allowance/travelling-allowance.component';
 import { AttachmentComponent } from './attachment/attachment.component';
 import { ClaimCalculationComponent } from './claim-calculation/claim-calculation.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     component: InspectionPageComponent,
     path: 'inspectionDashboard'
+  },
+  {
+    component: DashboardComponent,
+    path: 'Dashboard'
   },
   {
     component: SplashComponent,

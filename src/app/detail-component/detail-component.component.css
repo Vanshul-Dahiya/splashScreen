@@ -71,11 +71,89 @@ h1 {
     /* border: 1px solid cyan; */
     border-radius: 8px;
   }
-  .footer-nav {
+  /* .footer-nav {
     margin-left: 30px;
     width: 80%;
     padding: 0;
     margin-top: 100px;
     margin-bottom: 0px;
+  } */
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: auto;
+}
+.scrollable-container {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 50px;
+}
+.footer-nav {
+  position: absolute;
+  margin-top: 800px;
+  width: 80%;
+  padding: 0;
+  /* z-index: 1; */
+  /* margin-top: 750px; */
+  /* margin-bottom: 0px; */
+}
+@media (max-width: 768px) {
+  .footer-nav {
+    position: absolute;
+    margin-top: 800px;
+    width: 80%;
+    padding: 0;
+  }
+}
+@media screen and (max-height: 700px) {
+  .footer-nav {
+    position: absolute;
+    margin: 5px 20px;
+    width: 80%;
+    padding: 8px;
+  }
+}
+@media screen and (min-height: 701px) and (max-height: 800px) {
+  .footer-nav {
+    position: absolute;
+    margin: 2px 43px;
+    width: 80%;
+  }
+}
+@media screen and (min-height: 801px) and (max-height: 900px) {
+  .footer-nav {
+    position: absolute;
+    margin: -10px 38px;
+    width: 80%;
+  }
+}
+@media screen and (min-height: 901px) and (max-height: 1001px) {
+  .footer-nav {
+    position: absolute;
+    margin: 40px 33px;
+    width: 80%;
+  }
+}
+@media screen and (min-height: 1002px) and (max-height: 1101px) {
+  .footer-nav {
+    position: absolute;
+    margin: 10px 67px;
+    width: 80%;
+  }
+}
+@media screen and (min-height: 1102px) and (max-height: 1220px) {
+  .footer-nav {
+    position: absolute;
+    margin: 110px 61px;
+    width: 80%;
+  }
+}
+@media screen and (min-height: 1221px) and (max-height: 1420px) {
+  .footer-nav {
+    position: absolute;
+    margin: 190px 81px;
+    width: 80%;
   }
 }
