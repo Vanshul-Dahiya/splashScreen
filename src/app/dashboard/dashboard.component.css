@@ -72,7 +72,7 @@
   left: calc(50% - 170px / 2);
   top: calc(50% - 22px / 2);
 
-  font-family: "Roboto";
+  /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
